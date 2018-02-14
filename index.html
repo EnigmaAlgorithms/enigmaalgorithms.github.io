@@ -1,12 +1,39 @@
-![(*)][logo] # ENIGMA ALGORITHMS Enigma Algorithms is an international market leader in developing and providing future proof
-and intelligent space and occupant management algorithms, as well as providing data analysis and process optimisation. ###
-Algorithm Foundry We provide consulting services to provide advanced algorithms to understand, control and optimise your
-procesess. Every problem yields surprising results to our systematic process of data analytics. ### Royalties and Licensing
-Enigma provides the embedded control software for our Hardware partners, under a licensing and royalty arrangement. Enigma
-does not control or produce hardware systems. Rather, we provide software control systems for hardware platforms developed
-by partners who meet our minimum technical requirements to support our embedded systems. "powered by Enigma" ### Cloud-based
-eStore Cloud-based eStore sells additional services. The eStore is available as an online interface via all Enigma-enabled
-control systems. The eStore retails data services and optimisations - such as advanced data-processing algorithms, control
-optimisations, hardware interfaces and management and reporting functionality. ## Core Principles - Encryption in motion,
-encryption at rest. - It's your data - Better data means better decisions - Greater control yields greater optimisation [logo]:
-https://enigmaalgorithms.github.io/images/logo.png "ENIGMA"
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US " }}">
+
+<head>
+    <meta charset="UTF-8"> {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+
+<body>
+    <section class="page-header">
+        <h1 class="project-name">Enigma Algorithms</h1>
+        <h2 class="project-tagline">sensors, data, space optimisation, occupant comfort</h2>
+    </section>
+
+    <section class="main-content">
+        {{ content }}
+
+        <footer class="site-footer">
+            <span class="site-footer-credits">Copyright © 2018 Enigma Algorithms. All rights reserved.</span>
+        </footer>
+    </section>
+
+    {% if site.google_analytics %}
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)        
+}, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script> {% endif %}
+</body>
+
+</html>
